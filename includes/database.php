@@ -1,5 +1,5 @@
 <?php
-require "./../../dbpwd.php";
+require __DIR__ . "/../../dbpwd.php";
 $db = mysqli_connect('srv1228.hstgr.io', 'u893274511_beautysalon', $salonPWD , 'u893274511_beautysalondb');
 
 
