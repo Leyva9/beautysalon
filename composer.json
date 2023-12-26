@@ -1,0 +1,19 @@
+{
+    "name": "leyva9/beautysalon",
+    "description": "modern php project with mysql",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Models\\" : "./models"
+        }
+    },
+    "authors": [
+        {
+            "name": "Leyva9",
+            "email": "leyva0919@gmail.com"
+        }
+    ],
+    "require": {}
+}
