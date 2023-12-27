@@ -18,4 +18,14 @@
             debugger("Desde register");
             $router->render('auth/register.php', []);
         }
+
+        public static function forget(Router $router) {
+            debugger("Desde forget");
+            $router->render('auth/login.php', []);
+        }
+
+        public static function recovery(Router $router) {
+            debugger("Desde recovery");
+            $router->render('auth/recovery.php', []);
+        }
     }

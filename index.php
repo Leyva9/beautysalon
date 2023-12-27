@@ -8,16 +8,20 @@ use Controllers\PagesController;
 
 $router = new Router();
 
-// index
-$router->get('/', [PagesController::class, 'index']);
-
-// login
-$router->get('/login', [LoginController::class, 'login']);
-$router->post('/login', [LoginController::class, 'login']);
+// ** login
+$router->get('/', [LoginController::class, 'login']);
+$router->post('/', [LoginController::class, 'login']);
 $router->get('/logout', [LoginController::class, 'logout']);
+
+// ** password recovery
+$router->get('/forget', [LoginController::class, 'forget']);
+$router->post('/forget', [LoginController::class, 'forget']);
+$router->get('/recovery', [LoginController::class, 'recovery']);
+$router->post('/recovery', [LoginController::class, 'recovery']);
+
+// ** create new account
 $router->get('/register', [LoginController::class, 'register']);
 $router->post('/register', [LoginController::class, 'register']);
-
 
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
